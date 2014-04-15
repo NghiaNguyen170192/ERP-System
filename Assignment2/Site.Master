@@ -1,0 +1,114 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="Assignment2.SiteMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head runat="server">
+    <title></title>
+    <link href="~/Styles/Site.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form runat="server">
+    <div class="page">
+        <div class="header" style="background-color: #1E90FF;">
+            <div class="title">
+                <h1>
+                    Online Ware House
+                </h1>
+            </div>
+            <div class="loginDisplay">
+                <asp:LoginView ID="HeadLoginView" runat="server" EnableViewState="false">
+                    <AnonymousTemplate>
+                        [ <a href="~/Account/Login.aspx" id="HeadLoginStatus" runat="server">Log In</a>
+                        ]
+                    </AnonymousTemplate>
+                    <LoggedInTemplate>
+                        Welcome <span class="bold">
+                            <asp:LoginName ID="HeadLoginName" runat="server" />
+                        </span>! [
+                        <asp:LoginStatus ID="HeadLoginStatus" runat="server" LogoutAction="Redirect" LogoutText="Log Out"
+                            LogoutPageUrl="~/" />
+                        ]
+                    </LoggedInTemplate>
+                </asp:LoginView>
+            </div>
+            <div class="clear hideSkiplink">
+                <asp:Menu ID="NavigationMenu" runat="server" CssClass="menu" EnableViewState="false"
+                    IncludeStyleBlock="false" Orientation="Horizontal">
+                    <Items>
+                        <asp:MenuItem NavigateUrl="~/Default.aspx" Text="Home" />
+                        <asp:MenuItem Text="Data">
+                            <asp:MenuItem Text="Product" Value="Product" NavigateUrl="~/HTML/ProductFolder/ProductPage.aspx">
+                                <asp:MenuItem Text="Add Product" NavigateUrl="~/HTML/ProductFolder/AddProductPage.aspx">
+                                </asp:MenuItem>
+                                <asp:MenuItem Text="Update Product" NavigateUrl="~/HTML/ProductFolder/UpdateProductPage.aspx">
+                                </asp:MenuItem>
+                                <asp:MenuItem Text="Delete Product" NavigateUrl="~/HTML/ProductFolder/DeleteProductPage.aspx">
+                                </asp:MenuItem>
+                            </asp:MenuItem>
+                            <asp:MenuItem Text="WareHouse" Value="WareHouse" NavigateUrl="~/HTML/WareHouseFolder/WareHousePage.aspx">
+                                <asp:MenuItem Text="Add Ware House" NavigateUrl="~/HTML/WareHouseFolder/AddWareHousePage.aspx">
+                                </asp:MenuItem>
+                                <asp:MenuItem Text="Update Ware House" NavigateUrl="~/HTML/WareHouseFolder/UpdateWareHousePage.aspx">
+                                </asp:MenuItem>
+                                <asp:MenuItem Text="Delete Ware House" NavigateUrl="~/HTML/WareHouseFolder/DeleteWareHousePage.aspx">
+                                </asp:MenuItem>
+                            </asp:MenuItem>
+                            <asp:MenuItem Text="Provider" Value="Provider" NavigateUrl="~/HTML/ProviderFolder/ProviderPage.aspx">
+                                <asp:MenuItem Text="Add Provider" NavigateUrl="~/HTML/ProviderFolder/AddProviderPage.aspx">
+                                </asp:MenuItem>
+                                <asp:MenuItem Text="Update Provider" NavigateUrl="~/HTML/ProviderFolder/UpdateProviderPage.aspx">
+                                </asp:MenuItem>
+                                <asp:MenuItem Text="Delete Provider" NavigateUrl="~/HTML/ProviderFolder/DeleteProviderPage.aspx">
+                                </asp:MenuItem>
+                            </asp:MenuItem>
+                            <asp:MenuItem Text="WES" Value="WES" NavigateUrl="~/HTML/WESFolder/WESPage.aspx">
+                                <asp:MenuItem Text="Add WES" NavigateUrl="~/HTML/WESFolder/AddWESPage.aspx"></asp:MenuItem>
+                                <asp:MenuItem Text="Update WES" NavigateUrl="~/HTML/WESFolder/UpdateWESPage.aspx">
+                                </asp:MenuItem>
+                                <asp:MenuItem Text="Delete WES" NavigateUrl="~/HTML/WESFolder/DeleteWESPage.aspx">
+                                </asp:MenuItem>
+                            </asp:MenuItem>
+                            <asp:MenuItem Text="WES Detail" Value="WESDetail" NavigateUrl="~/HTML/WESDetailFolder/WESDetailPage.aspx">
+                                <asp:MenuItem Text="Add WES Detail" NavigateUrl="~/HTML/WESDetailFolder/AddWESDetailPage.aspx">
+                                </asp:MenuItem>
+                                <asp:MenuItem Text="Update WES Detail" NavigateUrl="~/HTML/WESDetailFolder/UpdateWESDetailPage.aspx">
+                                </asp:MenuItem>
+                                <asp:MenuItem Text="Delete WES Detail" NavigateUrl="~/HTML/WESDetailFolder/DeleteWESDetailPage.aspx">
+                                </asp:MenuItem>
+                            </asp:MenuItem>
+                            <asp:MenuItem Text="DOS" Value="DOS" NavigateUrl="~/HTML/DOSFolder/DOSPage.aspx">
+                                <asp:MenuItem Text="Add DOS" NavigateUrl="~/HTML/DOSFolder/AddDOSPage.aspx"></asp:MenuItem>
+                                <asp:MenuItem Text="Update DOS" NavigateUrl="~/HTML/DOSFolder/UpdateDOSPage.aspx">
+                                </asp:MenuItem>
+                                <asp:MenuItem Text="Delete DOS" NavigateUrl="~/HTML/DOSFolder/DeleteDOSPage.aspx">
+                                </asp:MenuItem>
+                            </asp:MenuItem>
+                            <asp:MenuItem Text="DOS Detail" Value="DOSDetail" NavigateUrl="~/HTML/DOSDetailFolder/DOSDetailPage.aspx">
+                                <asp:MenuItem Text="Add DOS Detail" NavigateUrl="~/HTML/DOSDetailFolder/AddDOSDetailPage.aspx">
+                                </asp:MenuItem>
+                                <asp:MenuItem Text="Update DOS Detail" NavigateUrl="~/HTML/DOSDetailFolder/UpdateDOSDetailPage.aspx">
+                                </asp:MenuItem>
+                                <asp:MenuItem Text="Delete DOS Detail" NavigateUrl="~/HTML/DOSDetailFolder/DeleteDOSDetailPage.aspx">
+                                </asp:MenuItem>
+                            </asp:MenuItem>
+                        </asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/About.aspx" Text="About" />
+                    </Items>
+                </asp:Menu>
+            </div>
+        </div>
+        <div class="main" style="background-color: #F0F8FF; padding: 0;">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <div class="clear">
+        </div>
+    </div>
+    <div class="footer">
+        Copyright © 2012 by Nghia, Nguyen Quoc Trong - s3343711@rmit.edu.vn
+    </div>
+    </form>
+</body>
+</html>

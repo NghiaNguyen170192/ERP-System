@@ -1,0 +1,404 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8B281564-649C-4D7B-9A21-3E65C9EF44E9}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Assignment2</RootNamespace>
+    <AssemblyName>Assignment2</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="About.aspx" />
+    <Content Include="Account\ChangePassword.aspx" />
+    <Content Include="Account\ChangePasswordSuccess.aspx" />
+    <Content Include="Account\Login.aspx" />
+    <Content Include="Account\Register.aspx" />
+    <Content Include="ErrorPage.aspx" />
+    <Content Include="HTML\DOSDetailFolder\AddDOSDetailPage.aspx" />
+    <Content Include="HTML\DOSDetailFolder\DeleteDOSDetailPage.aspx" />
+    <Content Include="HTML\DOSDetailFolder\DOSDetailPage.aspx" />
+    <Content Include="HTML\DOSDetailFolder\UpdateDOSDetailPage.aspx" />
+    <Content Include="HTML\DOSFolder\AddDOSPage.aspx" />
+    <Content Include="HTML\DOSFolder\DeleteDOSPage.aspx" />
+    <Content Include="HTML\DOSFolder\DOSPage.aspx" />
+    <Content Include="HTML\DOSFolder\UpdateDOSPage.aspx" />
+    <Content Include="HTML\ProductFolder\AddProductPage.aspx" />
+    <Content Include="HTML\ProductFolder\DeleteProductPage.aspx" />
+    <Content Include="HTML\ProductFolder\ProductPage.aspx" />
+    <Content Include="HTML\ProductFolder\UpdateProductPage.aspx" />
+    <Content Include="HTML\ProviderFolder\AddProviderPage.aspx" />
+    <Content Include="HTML\ProviderFolder\DeleteProviderPage.aspx" />
+    <Content Include="HTML\ProviderFolder\ProviderPage.aspx" />
+    <Content Include="HTML\ProviderFolder\UpdateProviderPage.aspx" />
+    <Content Include="HTML\WareHouseFolder\AddWareHousePage.aspx" />
+    <Content Include="HTML\WareHouseFolder\DeleteWareHousePage.aspx" />
+    <Content Include="HTML\WareHouseFolder\UpdateWareHousePage.aspx" />
+    <Content Include="HTML\WareHouseFolder\WareHousePage.aspx" />
+    <Content Include="HTML\WESDetailFolder\AddWESDetailPage.aspx" />
+    <Content Include="HTML\WESDetailFolder\DeleteWESDetailPage.aspx" />
+    <Content Include="HTML\WESDetailFolder\UpdateWESDetailPage.aspx" />
+    <Content Include="HTML\WESDetailFolder\WESDetailPage.aspx" />
+    <Content Include="HTML\WESFolder\AddWESPage.aspx" />
+    <Content Include="HTML\WESFolder\DeleteWESPage.aspx" />
+    <Content Include="HTML\WESFolder\UpdateWESPage.aspx" />
+    <Content Include="HTML\WESFolder\WESPage.aspx" />
+    <Content Include="Styles\Site.css" />
+    <Content Include="Default.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.4.1.js" />
+    <Content Include="Scripts\jquery-1.4.1.min.js" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.aspx.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="About.aspx.designer.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ChangePassword.aspx.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ChangePassword.aspx.designer.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ChangePasswordSuccess.aspx.cs">
+      <DependentUpon>ChangePasswordSuccess.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ChangePasswordSuccess.aspx.designer.cs">
+      <DependentUpon>ChangePasswordSuccess.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ErrorPage.aspx.cs">
+      <DependentUpon>ErrorPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ErrorPage.aspx.designer.cs">
+      <DependentUpon>ErrorPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="HTML\DOSDetailFolder\AddDOSDetailPage.aspx.cs">
+      <DependentUpon>AddDOSDetailPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HTML\DOSDetailFolder\AddDOSDetailPage.aspx.designer.cs">
+      <DependentUpon>AddDOSDetailPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HTML\DOSDetailFolder\DeleteDOSDetailPage.aspx.cs">
+      <DependentUpon>DeleteDOSDetailPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HTML\DOSDetailFolder\DeleteDOSDetailPage.aspx.designer.cs">
+      <DependentUpon>DeleteDOSDetailPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HTML\DOSDetailFolder\DOSDetailPage.aspx.cs">
+      <DependentUpon>DOSDetailPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HTML\DOSDetailFolder\DOSDetailPage.aspx.designer.cs">
+      <DependentUpon>DOSDetailPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HTML\DOSDetailFolder\UpdateDOSDetailPage.aspx.cs">
+      <DependentUpon>UpdateDOSDetailPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HTML\DOSDetailFolder\UpdateDOSDetailPage.aspx.designer.cs">
+      <DependentUpon>UpdateDOSDetailPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HTML\DOSFolder\AddDOSPage.aspx.cs">
+      <DependentUpon>AddDOSPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HTML\DOSFolder\AddDOSPage.aspx.designer.cs">
+      <DependentUpon>AddDOSPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HTML\DOSFolder\DeleteDOSPage.aspx.cs">
+      <DependentUpon>DeleteDOSPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HTML\DOSFolder\DeleteDOSPage.aspx.designer.cs">
+      <DependentUpon>DeleteDOSPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HTML\DOSFolder\DOSPage.aspx.cs">
+      <DependentUpon>DOSPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HTML\DOSFolder\DOSPage.aspx.designer.cs">
+      <DependentUpon>DOSPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HTML\DOSFolder\UpdateDOSPage.aspx.cs">
+      <DependentUpon>UpdateDOSPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HTML\DOSFolder\UpdateDOSPage.aspx.designer.cs">
+      <DependentUpon>UpdateDOSPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HTML\ProductFolder\AddProductPage.aspx.cs">
+      <DependentUpon>AddProductPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HTML\ProductFolder\AddProductPage.aspx.designer.cs">
+      <DependentUpon>AddProductPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HTML\ProductFolder\DeleteProductPage.aspx.cs">
+      <DependentUpon>DeleteProductPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HTML\ProductFolder\DeleteProductPage.aspx.designer.cs">
+      <DependentUpon>DeleteProductPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HTML\ProductFolder\ProductPage.aspx.cs">
+      <DependentUpon>ProductPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HTML\ProductFolder\ProductPage.aspx.designer.cs">
+      <DependentUpon>ProductPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HTML\ProductFolder\UpdateProductPage.aspx.cs">
+      <DependentUpon>UpdateProductPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HTML\ProductFolder\UpdateProductPage.aspx.designer.cs">
+      <DependentUpon>UpdateProductPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HTML\ProviderFolder\AddProviderPage.aspx.cs">
+      <DependentUpon>AddProviderPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HTML\ProviderFolder\AddProviderPage.aspx.designer.cs">
+      <DependentUpon>AddProviderPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HTML\ProviderFolder\DeleteProviderPage.aspx.cs">
+      <DependentUpon>DeleteProviderPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HTML\ProviderFolder\DeleteProviderPage.aspx.designer.cs">
+      <DependentUpon>DeleteProviderPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HTML\ProviderFolder\ProviderPage.aspx.cs">
+      <DependentUpon>ProviderPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HTML\ProviderFolder\ProviderPage.aspx.designer.cs">
+      <DependentUpon>ProviderPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HTML\ProviderFolder\UpdateProviderPage.aspx.cs">
+      <DependentUpon>UpdateProviderPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HTML\ProviderFolder\UpdateProviderPage.aspx.designer.cs">
+      <DependentUpon>UpdateProviderPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HTML\WareHouseFolder\AddWareHousePage.aspx.cs">
+      <DependentUpon>AddWareHousePage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HTML\WareHouseFolder\AddWareHousePage.aspx.designer.cs">
+      <DependentUpon>AddWareHousePage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HTML\WareHouseFolder\DeleteWareHousePage.aspx.cs">
+      <DependentUpon>DeleteWareHousePage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HTML\WareHouseFolder\DeleteWareHousePage.aspx.designer.cs">
+      <DependentUpon>DeleteWareHousePage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HTML\WareHouseFolder\UpdateWareHousePage.aspx.cs">
+      <DependentUpon>UpdateWareHousePage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HTML\WareHouseFolder\UpdateWareHousePage.aspx.designer.cs">
+      <DependentUpon>UpdateWareHousePage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HTML\WareHouseFolder\WareHousePage.aspx.cs">
+      <DependentUpon>WareHousePage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HTML\WareHouseFolder\WareHousePage.aspx.designer.cs">
+      <DependentUpon>WareHousePage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HTML\WESDetailFolder\AddWESDetailPage.aspx.cs">
+      <DependentUpon>AddWESDetailPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HTML\WESDetailFolder\AddWESDetailPage.aspx.designer.cs">
+      <DependentUpon>AddWESDetailPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HTML\WESDetailFolder\DeleteWESDetailPage.aspx.cs">
+      <DependentUpon>DeleteWESDetailPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HTML\WESDetailFolder\DeleteWESDetailPage.aspx.designer.cs">
+      <DependentUpon>DeleteWESDetailPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HTML\WESDetailFolder\UpdateWESDetailPage.aspx.cs">
+      <DependentUpon>UpdateWESDetailPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HTML\WESDetailFolder\UpdateWESDetailPage.aspx.designer.cs">
+      <DependentUpon>UpdateWESDetailPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HTML\WESDetailFolder\WESDetailPage.aspx.cs">
+      <DependentUpon>WESDetailPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HTML\WESDetailFolder\WESDetailPage.aspx.designer.cs">
+      <DependentUpon>WESDetailPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HTML\WESFolder\AddWESPage.aspx.cs">
+      <DependentUpon>AddWESPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HTML\WESFolder\AddWESPage.aspx.designer.cs">
+      <DependentUpon>AddWESPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HTML\WESFolder\DeleteWESPage.aspx.cs">
+      <DependentUpon>DeleteWESPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HTML\WESFolder\DeleteWESPage.aspx.designer.cs">
+      <DependentUpon>DeleteWESPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HTML\WESFolder\UpdateWESPage.aspx.cs">
+      <DependentUpon>UpdateWESPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HTML\WESFolder\UpdateWESPage.aspx.designer.cs">
+      <DependentUpon>UpdateWESPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HTML\WESFolder\WESPage.aspx.cs">
+      <DependentUpon>WESPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HTML\WESFolder\WESPage.aspx.designer.cs">
+      <DependentUpon>WESPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ModelFolder\DOS.cs" />
+    <Compile Include="ModelFolder\DOSDetail.cs" />
+    <Compile Include="ModelFolder\Model.cs" />
+    <Compile Include="ModelFolder\Product.cs" />
+    <Compile Include="ModelFolder\Provider.cs" />
+    <Compile Include="ModelFolder\WareHouse.cs" />
+    <Compile Include="ModelFolder\WES.cs" />
+    <Compile Include="ModelFolder\WESDetail.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Account\Web.config" />
+    <Content Include="Site.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="WebService\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>11571</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
